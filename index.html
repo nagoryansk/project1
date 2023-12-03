@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<META HTTP-EQUIV = "Content-Language" CONTENT = "ua">
+	<META NAME = "Description" CONTENT = "Головна сторінка рибальского клубу Павлограду.">
+	<META NAME = "Keywords" CONTENT ="ставок, Павлоград, риболовля,водойм,рибальський,клуб,корпоратив, рибна, риба, снасть, Затишне,природа, відпочинок">
+	<title>Головна сторінка</title>
+	<link rel="stylesheet" href="main.css"> <!-- ссилка на файл css -->
+</head>
+<body><br> <!-- кнопки для перехіда між сторінками -->
+	<button style="position:relative; top:-10%;  left:25%;"><a href="index.html">Головна сторінка</a></button>
+	<button style="position:relative; top:6%;  left:35%;"><a href="index1.html"> О нас</a></button>
+	<button style="position:relative; top:6%;  left:45%;"><a href="index2.html">Послуги</a></button>
+	<button style="position:relative; top:6%;  left:55%;"><a href="index3.html">Правила</a></button>	
+	<br>
+	<br>
+	<br>
+	<hr>
+	<img style="position: relative;width:201px;height:162px;left:4%;" src="img/logo.png">
+	<br>
+	<br>
+	<h1 style="position: relative;left: 4%">Рибальський клуб Павлограда</h1>
+	<h2 style="position: relative;left: 4%">Ласкаво просимо всім любителям риболовлі</h2>
+	<h3 style="position: relative;left: 4%">Ставок розташований Дніпропетровській області 40 км на північ <br>від міста Павлоград <br><br> В цьому чудовому куточку природи - чудові місця для рибалки,<br> де ви зможете ловити рибу</h3>
+	<hr>
+	<div class = "gallery"> <!-- створення галереї -->
+		<h2 style="position: relative; text-align: center;" ;>Галерея</h2>
+		<div class = "img-gallery">
+			<div class="img">
+				<img src="img/img1.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img2.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img3.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img4.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img5.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img6.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img7.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img8.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img9.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img10.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img11.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img12.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img13.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img14.jpg">
+			</div>
+			<div class="img">
+				<img src="img/img15.jpg">
+			</div>
+		</div>
+		<div class = "popup"> <!-- спливаюче вікно-->
+			<span>&times;</span> <!-- спец символ хрестик-->
+			<img src="img/img15.jpg">
+		</div>
+	</div>
+	<hr>
+	<h2 style="position: relative;left: 4%">Контакти:</h2>
+	<p>ПІБ: Нагорянський Микола Олександровия</p>
+	<p>E-mail: nagoryansk@gmail.com</p>
+	<p>номер: +380951275340</p>
+	<script>
+		document.querySelectorAll('.img-gallery img'). forEach(img =>   // для кожної картинки в галереї
+		{         
+			img.onclick = ()=>					//при натисканні на картинку
+			{
+				document.querySelector('.popup').style.display = 'block'; //відкривається спливаюче вікно
+				document.querySelector('.popup img').src = img.getAttribute('src');
+			}
+		} )
+		document.querySelector('.popup span').onclick = () => //при натисканні на хрестик
+		{
+			document.querySelector('.popup').style.display = 'none'; //значення дісплей буде дорівнювати none
+		}
+
+
+
+    </script>
+</body>
+
+</html>
